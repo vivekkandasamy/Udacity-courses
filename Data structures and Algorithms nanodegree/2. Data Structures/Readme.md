@@ -17,6 +17,11 @@ Here __python os__ module is used to search the files inside the directories.
 Since there can be any number of sub directories, recursion model is used to cover all sub directories.
 
 ## Project 4
-Check if the user is on the given group. If not, check the subgroup and its subgroup
+The code checks if the user is on the given group. If not, check the subgroup and its subgroup
 
 Since the depth of sub groups is not predefined, recursion model is used.
+
+## Project 5
+The code creates an hashble block chain with timestamp and reference to previous hashes
+
+The get and set methods are used to add new blocks and read the existing blocks
