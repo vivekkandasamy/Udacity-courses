@@ -29,4 +29,5 @@ The get and set methods are used to add new blocks and read the existing blocks
 ## Project 6
 
 This code is used to create union and intersection of two Linkedlist. Additional function to_list to convert a given linked list into list are written under class Linkedlist.
+
 First the union(or intersection) list of both input lists are created using set function. Later a new linkedlist is created using the union(or intersection) list
