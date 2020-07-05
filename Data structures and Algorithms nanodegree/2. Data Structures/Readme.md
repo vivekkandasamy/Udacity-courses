@@ -14,4 +14,9 @@ The time complexity of set() is O(1), because there is no loops. The space compl
 ## Project 2
 Here __python os__ module is used to search the files inside the directories. 
 
-Since there can be any number of sub directories, recursion model is used to cover maximum sub directories.
+Since there can be any number of sub directories, recursion model is used to cover all sub directories.
+
+## Project 4
+Check if the user is on the given group. If not, check the subgroup and its subgroup
+
+Since the depth of sub groups is not predefined, recursion model is used.
