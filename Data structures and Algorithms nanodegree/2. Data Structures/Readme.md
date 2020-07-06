@@ -16,6 +16,16 @@ Here __python os__ module is used to search the files inside the directories.
 
 Since there can be any number of sub directories, recursion model is used to cover all sub directories.
 
+## Project 3
+A challenging problem that took a considerable time to understand the algorithm and solve the problem.
+
+Following steps are involved in solving the problem.
+
+1. A string is taken and frequency of each character is determined and stored as key/value pair
+2. Build a Huffmann tree.
+3. Encode the text in compression form
+4. Decode the data using the Hufman tree and compressed text 
+
 ## Project 4
 The code checks if the user is on the given group. If not, check the subgroup and its subgroup
 
