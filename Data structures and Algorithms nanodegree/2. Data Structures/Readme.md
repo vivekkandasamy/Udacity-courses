@@ -1,5 +1,7 @@
 # Data structures and Algorithms Nanodegree
 
+# 2. Data Structures
+
 # Project Explanation
 Explanation of the different project submodules
 
