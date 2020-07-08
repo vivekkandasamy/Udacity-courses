@@ -25,10 +25,9 @@ class LRU_Cache(object):
         # Set the value if the key is not present in the cache. If the cache is at capacity remove the oldest item.
         if self.capacity<=0:
             return
+        
         if key in self.cache:
             self.cache.pop(key)
-            self.cache[key]=value
-            return
         
         if len(self.cache.keys())==self.capacity:
             self.cache.popitem(last=False)
