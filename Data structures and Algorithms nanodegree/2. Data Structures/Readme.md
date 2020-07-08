@@ -18,6 +18,7 @@ Here __python os__ module is used to search the files inside the directories.
 
 Since there can be any number of sub directories, recursion model is used to cover all sub directories.
 
+### Time and Space complexity
 The time complexity is O(n), where n is the total number of files and directories to be searched. The space compleyity is o(n) where n is the number of files to be stored in array.
 
 ## Project 3
@@ -30,6 +31,7 @@ Following steps are involved in solving the problem.
 3. Encode the text in compression form
 4. Decode the data using the Hufman tree and compressed text
 
+### Time and Space complexity
 The time complexity is given by O(nlogn) and the space complexity is given by O(n)
 
 ## Project 4
@@ -37,6 +39,7 @@ The code checks if the user is on the given group. If not, check the subgroup an
 
 Since the depth of sub groups is not predefined, recursion model is used.
 
+### Time and Space complexity
 The time complexity is O(n), where n is the total number of users and groups to be searched. The space complexity is o(1) used to search the algorithm.
 
 ## Project 5
@@ -44,6 +47,7 @@ The code creates an hashble block chain with timestamp and reference to previous
 
 The get and set methods are used to add new blocks and read the existing blocks
 
+### Time and Space complexity
 The time and space complexity is o(1), since the function adds new entry in constant time and constant space.
 
 ## Project 6
@@ -52,4 +56,5 @@ This code is used to create union and intersection of two Linkedlist. Additional
 
 First the union(or intersection) list of both input lists are created using set function. Later a new linkedlist is created using the union(or intersection) list
 
+### Time and Space complexity
 The time complexity is O(n*m), where n and m are the number of entries in list 1 and list 2 respectively. The space complexity is o(1).
