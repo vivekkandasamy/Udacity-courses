@@ -37,18 +37,37 @@ class Blockchain:
     def get_block(self):
         return self.current_block
         
-blockchain=Blockchain()
-blockchain.set_block(5)
-blockchain.set_block('abc')
-blockchain.set_block('gh')
-print(blockchain.get_block())
+
+blockchain1=Blockchain()
+print(blockchain1.get_block())
 """
 Output:
-Timestamp: time.struct_time(tm_year=2020, tm_mon=7, tm_mday=5, tm_hour=19, tm_min=58, tm_sec=37, tm_wday=6, tm_yday=187, tm_isdst=0)
+None
+"""
+
+blockchain2=Blockchain()
+blockchain2.set_block(5)
+print(blockchain2.get_block())
+"""
+Output:
+Timestamp: time.struct_time(tm_year=2020, tm_mon=7, tm_mday=8, tm_hour=22, tm_min=53, tm_sec=55, tm_wday=2, tm_yday=190, tm_isdst=0)
+Data: 5
+Previous Hash: None
+Hash: a20200a94c75010576e2d6a83e6fa69271901a9d805894b28bd91e6054fbfd10
+"""
+
+blockchain3=Blockchain()
+blockchain3.set_block(5)
+blockchain3.set_block('abc')
+blockchain3.set_block('gh')
+print(blockchain3.get_block())
+"""
+Output:
+Timestamp: time.struct_time(tm_year=2020, tm_mon=7, tm_mday=8, tm_hour=22, tm_min=50, tm_sec=23, tm_wday=2, tm_yday=190, tm_isdst=0)
 Data: gh
-Previous Hash: Timestamp: time.struct_time(tm_year=2020, tm_mon=7, tm_mday=5, tm_hour=19, tm_min=58, tm_sec=37, tm_wday=6, tm_yday=187, tm_isdst=0)
+Previous Hash: Timestamp: time.struct_time(tm_year=2020, tm_mon=7, tm_mday=8, tm_hour=22, tm_min=50, tm_sec=23, tm_wday=2, tm_yday=190, tm_isdst=0)
 Data: abc
-Previous Hash: Timestamp: time.struct_time(tm_year=2020, tm_mon=7, tm_mday=5, tm_hour=19, tm_min=58, tm_sec=37, tm_wday=6, tm_yday=187, tm_isdst=0)
+Previous Hash: Timestamp: time.struct_time(tm_year=2020, tm_mon=7, tm_mday=8, tm_hour=22, tm_min=50, tm_sec=23, tm_wday=2, tm_yday=190, tm_isdst=0)
 Data: 5
 Previous Hash: None
 Hash: a20200a94c75010576e2d6a83e6fa69271901a9d805894b28bd91e6054fbfd10
