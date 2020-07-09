@@ -48,7 +48,7 @@ The code creates an hashble block chain with timestamp and reference to previous
 The get and set methods are used to add new blocks and read the existing blocks
 
 ### Time and Space complexity
-The time and space complexity is o(n), since the function adds new entry in constant time and uses n spaces, where n is the number of entries.
+The time and space complexity are o(1) and o(n) respectively, since the function adds new entry in constant time and uses n spaces, where n is the number of entries.
 
 ## Project 6
 
