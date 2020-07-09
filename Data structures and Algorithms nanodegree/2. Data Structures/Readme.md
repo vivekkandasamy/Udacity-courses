@@ -40,7 +40,7 @@ The code checks if the user is on the given group. If not, check the subgroup an
 Since the depth of sub groups is not predefined, recursion model is used.
 
 ### Time and Space complexity
-The time complexity is O(n), where n is the total number of users and groups to be searched. The space complexity is o(1) used to search the algorithm.
+The time complexity is O(n), where n is the total number of users and groups to be searched. A space complexity of o(n) is used to search the group.
 
 ## Project 5
 The code creates an hashble block chain with timestamp and reference to previous hashes
@@ -48,7 +48,7 @@ The code creates an hashble block chain with timestamp and reference to previous
 The get and set methods are used to add new blocks and read the existing blocks
 
 ### Time and Space complexity
-The time and space complexity is o(1), since the function adds new entry in constant time and constant space.
+The time and space complexity is o(n), since the function adds new entry in constant time and uses n spaces, where n is the number of entries.
 
 ## Project 6
 
@@ -57,4 +57,4 @@ This code is used to create union and intersection of two Linkedlist. Additional
 First the union(or intersection) list of both input lists are created using set function. Later a new linkedlist is created using the union(or intersection) list
 
 ### Time and Space complexity
-The time complexity is O(n*m), where n and m are the number of entries in list 1 and list 2 respectively. The space complexity is o(1).
+The time complexity is O(n), where n denotes the number of entries in lists. The space complexity is o(n).
