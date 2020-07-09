@@ -30,24 +30,26 @@ In this problem elements of an array are rearranged so as to form two number suc
 Merge sort algorithm has a time complexity of o(nlog(n)) and a space complexity of o(n)
 
 ## Problem 4: Dutch National Flag Problem
-A list with elements 0,1,2 is sorted using a single traversal.
+A list with elements 0,1,2 is sorted with a single traversal.
 
 ### Time and Space complexity
 The space complexity is o(1) and time complexity is o(n)
 
 ## Problem 5: Autocomplete with Tries
+In this method Tries method is used to add words to a dcitionary. Later these dictionary of words are used to provide auto suggestions of words based on first few characters that the user enters. For this recursive functions are used.
 
 ### Time and Space complexity
+Since Trie uses for loops, the time complexity is O(n). the space complexity is also O(n), because of the recursive function. 
 
 ## Problem 6: Unsorted Integer Array
 
-In this problem the max and min values in a given list is found. The algorithm searches each and every elemnents in the list and find the minimum and maximum values.
+In this problem the max and min values in a given list is found. The algorithm compares every elements in the list and find the minimum and maximum values.
 
 ### Time and Space complexity
 Since the algoritm searches each and every element in the list the time complexity is o(n) and space complexity is o(1).
 
 ## Problem 7: Request Routing in a Web Server with a Trie
-
-
+The problem is similar to problem with exceptions like file handler. Here paths are added into the trie. Later if we search a path, trie returns the corresponding handler or not found handler.
 
 ### Time and Space complexity
+Usage of for loops to find and store paths on Trie node results in a time complexity of O(n). The space complexity will be O(n).
