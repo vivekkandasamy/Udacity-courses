@@ -1,6 +1,6 @@
 # Data structures and Algorithms Nanodegree
 
-# 2. Data Structures
+# 3. Basic Algorithms
 
 # Project Explanation
 Explanation of the different project submodules
@@ -22,36 +22,30 @@ The first algorithm is used to find the __pivot point__ and the second algorithm
 ### Time and Space complexity
 The time complexity for both binary search algorithm is O(log(n)) and their sum will also be same. The space complexity is O(1)
 
-## Project 3
-A challenging problem that took a considerable time to understand the algorithm and solve the problem.
+## Problem 3: Rearrange Array Digits
 
-Following steps are involved in solving the problem.
+In this problem elements of an array are rearranged so as to form two number such that their sum is maximum. For sorting the elements of the array merge sort algorithm is used.
 
-1. A string is taken and frequency of each character is determined and stored as key/value pair
-2. Build a Huffmann tree.
-3. Encode the text in compression form
-4. Decode the data using the Hufman tree and compressed text
+### Time and Space complexity
+Merge sort algorithm has a time complexity of o(nlog(n)) and a space complexity of o(n)
 
-The time complexity is given by O(nlogn) and the space complexity is given by O(n)
+## Problem 4: Dutch National Flag Problem
+A list with elements 0,1,2 is sorted using a single traversal.
 
-## Project 4
-The code checks if the user is on the given group. If not, check the subgroup and its subgroup
+### Time and Space complexity
+The space complexity is o(1) and time complexity is o(n)
 
-Since the depth of sub groups is not predefined, recursion model is used.
+## Problem 5: Autocomplete with Tries
 
-The time complexity is O(n), where n is the total number of users and groups to be searched. The space complexity is o(1) used to search the algorithm.
+### Time and Space complexity
 
-## Project 5
-The code creates an hashble block chain with timestamp and reference to previous hashes
+## Problem 6: Unsorted Integer Array
 
-The get and set methods are used to add new blocks and read the existing blocks
+In this problem the max and min values in a given list is found. The algorithm searches each and every elemnents in the list and find the minimum and maximum values.
 
-The time and space complexity is o(1), since the function adds new entry in constant time and constant space.
+### Time and Space complexity
+Since the algoritm searches each and every element in the list the time complexity is o(n) and space complexity is o(1).
 
-## Project 6
+## Problem 7: Request Routing in a Web Server with a Trie
 
-This code is used to create union and intersection of two Linkedlist. Additional function to_list to convert a given linked list into list are written under class Linkedlist.
-
-First the union(or intersection) list of both input lists are created using set function. Later a new linkedlist is created using the union(or intersection) list
-
-The time complexity is O(n*m), where n and m are the number of entries in list 1 and list 2 respectively. The space complexity is o(1).
+### Time and Space complexity
