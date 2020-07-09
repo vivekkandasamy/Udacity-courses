@@ -20,7 +20,7 @@ Two __binary search algorithms__ are used to search the index of a given number 
 The first algorithm is used to find the __pivot point__ and the second algorithm is used to find the __index__.
 
 ### Time and Space complexity
-The time complexity for both binary search algorithm is O(log(n)) and their sum will also be same. The space complexity is O(log(n)) due to recursive function.
+The time complexity for both binary search algorithm is O(log(n)) and their sum will also be same. The space complexity is O(1).
 
 ## Problem 3: Rearrange Array Digits
 
