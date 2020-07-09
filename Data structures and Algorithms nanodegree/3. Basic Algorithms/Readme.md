@@ -20,7 +20,7 @@ Two __binary search algorithms__ are used to search the index of a given number 
 The first algorithm is used to find the __pivot point__ and the second algorithm is used to find the __index__.
 
 ### Time and Space complexity
-The time complexity for both binary search algorithm is O(log(n)) and their sum will also be same. The space complexity is O(1)
+The time complexity for both binary search algorithm is O(log(n)) and their sum will also be same. The space complexity is O(log(n)) due to recursive function.
 
 ## Problem 3: Rearrange Array Digits
 
@@ -39,7 +39,7 @@ The space complexity is o(1) and time complexity is o(n)
 In this method Tries method is used to add words to a dcitionary. Later these dictionary of words are used to provide auto suggestions of words based on first few characters that the user enters. For this recursive functions are used.
 
 ### Time and Space complexity
-Since Trie uses for loops, the time complexity is O(n). the space complexity is also O(n), because of the recursive function. 
+Since Trie uses for loops with calls for suffixes for each character, the time complexity is O(nxm), where n is the number of words and m is the number of charcters in each word. The space complexity is also O(n), because of the recursive function. 
 
 ## Problem 6: Unsorted Integer Array
 
@@ -52,4 +52,4 @@ Since the algoritm searches each and every element in the list the time complexi
 The problem is similar to problem with exceptions like file handler. Here paths are added into the trie. Later if we search a path, trie returns the corresponding handler or not found handler.
 
 ### Time and Space complexity
-Usage of for loops to find and store paths on Trie node results in a time complexity of O(n). The space complexity will be O(n).
+Usage of for loops to find paths on Trie node results in a time complexity of O(nxm), where n is the number of paths and m is the number of charcters in each path. The space complexity will be O(n).
