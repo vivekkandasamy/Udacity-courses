@@ -36,20 +36,30 @@ def binary_search(input_list, number, lower_limit, upper_limit):
        int: Index or -1
     """
      
-    if upper_limit>=lower_limit:
-        middle=(lower_limit+upper_limit)//2
+    def binary_search(input_list, number, lower_limit, upper_limit):
+    """
+    Find the index by searching in a rotated sorted array
+
+    Args:
+       input_list(array), number(int), lower_limit(int), upper_limit(int): Input array to search and the target
+    Returns:
+       int: Index or -1
+    """
+    while True:
+        if upper_limit>=lower_limit:
+            middle=(lower_limit+upper_limit)//2
          
-        if input_list[middle] == number: 
-            return middle 
+            if input_list[middle] == number: 
+                return middle 
         
-        elif input_list[middle] > number: 
-            return binary_search(input_list, number, lower_limit, middle-1)
+            elif input_list[middle] > number: 
+                upper_limit= middle-1
   
-        else: 
-            return binary_search(input_list, number, middle+1, upper_limit)
+            else: 
+                lower_limit=middle+1
         
-    else:
-        return -1
+        else:
+            return -1
      
         
 def rotated_array_search(input_list, number):
