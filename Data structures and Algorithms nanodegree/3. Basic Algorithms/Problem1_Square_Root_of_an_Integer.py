@@ -15,7 +15,7 @@ def sqrt(number):
        int: Floored Square Root
     """
     if number<0:
-        return None
+        return None # Since there is no floor value for a complex number
     if number==0:
         return 0
     
@@ -40,4 +40,6 @@ print ("Pass" if  (4 == sqrt(16)) else "Fail")
 print ("Pass" if  (1 == sqrt(1)) else "Fail")
 #output: Pass
 print ("Pass" if  (5 == sqrt(27)) else "Fail")
+#output: Pass
+print ("Pass" if  (None == sqrt(-27)) else "Fail")# Floor value is not defined for complex numbers
 #output: Pass
