@@ -24,7 +24,7 @@ def pivot_point(input_list):
             upper_limit=middle
         else:
             break;
-    return middle
+    return lower_limit
 
 def binary_search(input_list, number, lower_limit, upper_limit):
     """
@@ -69,14 +69,17 @@ def rotated_array_search(input_list, number):
             return 0
         return -1
     
-    middle=pivot_point(input_list)
-    
-    if input_list[0]>number:
-        lower_limit=middle+1
-        upper_limit=len(input_list)-1
+    if input_list[0]>input_list[-1]:
+        middle=pivot_point(input_list)
+        if input_list[0]>number:
+            lower_limit=middle+1
+            upper_limit=len(input_list)-1
+        else:
+            lower_limit=0
+            upper_limit=middle
     else:
         lower_limit=0
-        upper_limit=middle
+        upper_limit=len(input_list)
     
     index=binary_search(input_list, number, lower_limit, upper_limit)
     return index
@@ -106,4 +109,8 @@ test_function([[6, 7, 8, 1, 2, 3, 4], 8])
 test_function([[6, 7, 8, 1, 2, 3, 4], 1])
 # Output: Pass
 test_function([[6, 7, 8, 1, 2, 3, 4], 10])
+# Output: Pass
+test_function([[], 10])
+# Output: Pass
+test_function([[1, 2, 3, 4], 4])
 # Output: Pass
